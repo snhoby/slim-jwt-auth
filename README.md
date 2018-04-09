@@ -6,6 +6,12 @@ PHP Authentication with JWT and Slim 3
 * PHP7
 * PHP Composer
 
+## Dependecies ###
+
+* Slim framework
+* Monolog
+* firebase/php-jwt
+
 ## Installation instruction ###
 
 * Clone this repository on your pc.
@@ -21,11 +27,11 @@ PHP Authentication with JWT and Slim 3
 http://localhost:8080/api/v1/login
 
 ##### Param:
-Name: username 
-Value: test
+* Name: username 
+* Value: test
 
-Name: password
-Value: test
+* Name: password
+* Value: test
 
 ##### Return: 
 API should return JSON data with token and expiry time
@@ -36,8 +42,8 @@ API should return JSON data with token and expiry time
 http://localhost:8080/api/v1/authtest
 
 ##### Header
-Name: Authorization
-value: Bearer <TOKEN RECEIVED FROM LOGIN API>
+* Name: Authorization
+* value: Bearer <TOKEN RECEIVED FROM LOGIN API>
 
 ##### Return 
 API should return JSON data with status 200
